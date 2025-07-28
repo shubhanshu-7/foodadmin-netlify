@@ -47,6 +47,7 @@ const ListFood = () => {
           </thead>
           <tbody>
             {list.map((item, index) => {
+              console.log("Image URL:",item.imageUrl);
               return (
                 <tr key={index}>
                   <td>
