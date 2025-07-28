@@ -55,7 +55,7 @@ const ListFood = () => {
                   <td>
                     <img 
                       //src={item.imageUrl}
-                      src={`https://foodrestapi-production-7cdd.up.railway.app/image/${imageId}`} 
+                      src={`https://foodrestapi-production-7cdd.up.railway.app/api/foods/image/${imageId}`} 
                       alt="" height={48} 
                       width={48} 
                     />
