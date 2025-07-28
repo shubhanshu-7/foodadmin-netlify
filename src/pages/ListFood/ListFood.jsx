@@ -47,13 +47,14 @@ const ListFood = () => {
           </thead>
           <tbody>
             {list.map((item, index) => {
-              console.log("Image URL:",item.imageUrl);
+              // console.log("Image URL:",item.imageUrl);
+              const imageId = item.imageUrl.split("/").pop();
               return (
                 <tr key={index}>
                   <td>
                     <img 
                       //src={item.imageUrl}
-                      src={`https://foodrestapi-production-7cdd.up.railway.app/image/${item.imageUrl}`} 
+                      src={`https://foodrestapi-production-7cdd.up.railway.app/image/${imageId}`} 
                       alt="" height={48} 
                       width={48} 
                     />
